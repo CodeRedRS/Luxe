@@ -1,0 +1,92 @@
+@import url('http://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+* {
+    font-family: 'Source Code Pro';
+    margin: 0;
+}
+
+body, html {
+    background-color: #333;
+    overflow-x: hidden;
+    z-index: -999;
+    height: 100%;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.sidebar {
+    width: 20%;
+    max-width: 20%;
+    min-height: 100vh;
+}
+
+.icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #888;
+    margin: 4px 0;
+}
+
+.no-radius {
+    border-radius: 0 !important;
+}
+
+.bg-platinum {
+    background-color: #E5E4E2;
+}
+
+.text-platinum {
+    color: #E5E4E2;
+}
+
+.navbar-left {
+    float: left !important;
+    border-right: solid 2px #212121;
+    width: 60px;
+}
+
+.carousel-control.left-no-bg {
+}
+
+.carousel-control.right-no-bg {
+    right: 0;
+    left: auto;
+}
+
+.brand {
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 5em;
+    line-height: 20px;
+}
+
+#body {
+    position: absolute;
+    top: 0;
+    left: 60px;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% - 60px);
+}
+
+#expand {
+    margin: 5px;
+    float: right;
+}
+
+#nav {
+    height: 100%;
+    position: fixed;
+}
+
+#testimonial {
+    /*-webkit-box-shadow: inset 0 1px 5px rgba(22, 22, 22, .1), inset 0 -1px 5px rgba(22, 22, 22, .1);*/
+    /*box-shadow: inset 0 1px 5px rgba(22, 22, 22, .1), inset 0 -1px 5px rgba(22, 22, 22, .1);*/
+    /*border-radius: 5px;*/
+}
