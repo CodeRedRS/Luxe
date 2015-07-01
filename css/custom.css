@@ -1,16 +1,73 @@
-@import url('http://fonts.googleapis.com/css?family=Source+Code+Pro');
-
 * {
-    font-family: 'Source Code Pro';
     margin: 0;
 }
 
 body, html {
-    background-color: #333;
-    overflow-x: hidden;
     z-index: -999;
-    height: 100%;
+    margin: 0;
     padding: 0;
+    height: 100%;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.btn-circle {
+    margin: 15px;
+    background-color: transparent;
+    border: 1px solid #E5E4E2;
+    color: #E5E4E2;
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.bg {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    left: -15px;
+    right: -15px;
+    top: -15px;
+    bottom: -15px;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -ms-filter: blur(5px);
+    -o-filter: blur(5px);
+    filter: blur(5px);
+    position: fixed;
+    z-index: -1;
+}
+
+.opacity-zero {
+    opacity: 0;
+}
+
+.opacity-one {
+    opacity: 1;
+}
+
+.bg.one {
+    /*background-color: #00FF00;*/
+    background-image: url('../imgs/bg/1.jpg');
+}
+
+.bg.two {
+    /*background-color: #FF0000;*/
+    background-image: url('../imgs/bg/2.jpg');
+}
+
+.bg.three {
+    background-image: url('../imgs/bg/3.jpg');
+}
+
+.bg.four {
+    background-image: url('../imgs/bg/4.jpg');
 }
 
 .sidebar {
@@ -19,12 +76,27 @@ body, html {
     min-height: 100vh;
 }
 
-.icon-bar {
+.btn-sidebar {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 4px;
+}
+
+.icon-bar-default {
     display: block;
     width: 22px;
     height: 2px;
     border-radius: 1px;
-    background-color: #888;
+    background-color: #333;
+    margin: 4px 0;
+}
+
+.icon-bar-sidebar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #FFF;
     margin: 4px 0;
 }
 
@@ -41,8 +113,9 @@ body, html {
 }
 
 .navbar-left {
+    z-index: 1000;
     float: left !important;
-    border-right: solid 2px #212121;
+    background-color: transparent;
     width: 60px;
 }
 
@@ -54,10 +127,14 @@ body, html {
     left: auto;
 }
 
+br.break {
+    margin: 50% 0;
+}
+
 .brand {
     height: 50px;
     padding: 15px 15px;
-    font-size: 5em;
+    font-size: 10vw;
     line-height: 20px;
 }
 
@@ -66,22 +143,50 @@ body, html {
     top: 0;
     left: 60px;
     right: 0;
+    bottom: 60px;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     height: calc(100% - 50px); /* Must match the height of the footer */
 }
 
-footer {
-    position: relative;
-    left: 60px;
-    width: 100%;
-    height: 50px; /* Must match the negative in the #body styling */
-}
-
 #expand {
+    outline-color: transparent !important;
     margin: 5px;
     float: right;
+}
+
+section:first-child {
+    margin-top: 35%;
+}
+
+section {
+    margin-top: 100%;
+    background-color: rgba(21, 21, 21, 0.8);
+    border: solid 1px #111;
+}
+
+section:last-child {
+    margin-bottom: 35%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    /* Negative indent footer by its height */
+    margin: 0 auto -60px;
+    /* Pad bottom by footer height */
+    padding: 0 0 60px;
+}
+
+#footer {
+    position: relative;
+    height: 60px;
+    bottom: 0;
+    left: -60px;
+    border-top: 1px solid #E5E4E2;
+    padding-top: 10px;
+    background-color: rgba(255, 255, 255, 0.12);
 }
 
 #nav {
@@ -89,8 +194,18 @@ footer {
     position: fixed;
 }
 
-#testimonial {
-    /*-webkit-box-shadow: inset 0 1px 5px rgba(22, 22, 22, .1), inset 0 -1px 5px rgba(22, 22, 22, .1);*/
-    /*box-shadow: inset 0 1px 5px rgba(22, 22, 22, .1), inset 0 -1px 5px rgba(22, 22, 22, .1);*/
-    /*border-radius: 5px;*/
+.list-group a {
+    text-decoration: none;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
 }

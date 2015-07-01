@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width; initial-scale = 1.0; maximum-scale=1.0; user-scalable=no"/>
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Bootstrap 101 Template</title>
 
@@ -13,8 +13,8 @@
 
     <!-- Other CSS -->
     <link rel="stylesheet" href="css/custom.css">
-    <link href='//fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,288 +26,259 @@
 
 <!--Body-->
 <body>
-
-<div class="navbar-left navbar-default no-radius bg-platinum" id="nav">
-    <button id="expand" class="btn btn-default" onclick="expand()">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-    </button>
+<div class="backgrounds">
+    <div class="bg one"></div>
+    <div class="bg two" style="display: none"></div>
+    <div class="bg three" style="display: none"></div>
+    <div class="bg four" style="display: none"></div>
 </div>
-<div id="body" class="text-platinum page-wrap" onclick="collapse();">
-    <div class="container">
+
+<div class="navbar-left" style="overflow: hidden;" id="nav">
+    <button id="expand" class="btn btn-sidebar" onclick="expand()">
+        <span class="icon-bar-sidebar"></span>
+        <span class="icon-bar-sidebar"></span>
+        <span class="icon-bar-sidebar"></span>
+    </button>
+    <div class="pull-left" style="min-width: 300px; width: 100%; display: none; height: 100%" id="navigation">
+        <ul class="list-group">
+            <a href="#Home">
+                <li class="list-group-item h3 uppercase">Home</li>
+            </a>
+            <a href="#Product">
+                <li class="list-group-item h3 uppercase">Our Product</li>
+            </a>
+            <a href="#Process">
+                <li class="list-group-item h3 uppercase">The Process</li>
+            </a>
+            <a href="#Faq">
+                <li class="list-group-item h3 uppercase">FAQ</li>
+            </a>
+        </ul>
+    </div>
+</div>
+<div id="body" class="text-platinum page-wrap" onclick="collapse();" style="height: 100%">
+    <div class="container wrap">
         <div class="row">
-            <div class="col-sm-11 col-xs-10">
+            <div class="col-md-12 col-sm-11 col-xs-10">
+                <section id="Home" class="col-xs-12">
+                    <h1 class="text-center h1">Luxe</h1>
 
-                <!--Brand-->
-                <div class="text-center">
-                    <h1 class="brand">Luxe</h1>
+                    <p>
+                        Looking for that extra touch of class to instantly set your home or business apart? Based out of
+                        beautiful Regina, SK, Luxe Curb and Edging installs custom, continuous concrete curbing that
+                        enhances the look and feel of your outdoor space. Whether you are looking to develop curb appeal
+                        that will impress or wanting to add that extra bit of luxury to your backyard sanctuary, our
+                        products provide an elegant, stylish finish that will stand the test of time.
+                    </p>
 
-                    <h3 style="margin-left: 10%">Curb and Edging</h3>
-                </div>
-
-                <!--Specializes-->
-                <div class="col-md-8">
-                    <p><strong>Luxe Specializes in</strong> Lorem ipsum dolor sit amet, ad eam
-                        lucilius
-                        prodesset
-                        dissentiet,
-                        eam timeam equidem id. Sed at labores omnesque, mei et oporteat invenire pericula, vis summo
-                        tempor
-                        legimus eu. Cu graece constituam pro. Ad mutat dictas accusamus qui, pri nonumy offendit
-                        expetendis
-                        te, discere sanctus per ad. Vero dolore propriae ad vix.</p>
-                </div>
-
-                <!--Gallery-->
-                <div class="col-md-4 hidden-sm hidden-xs">
-                    <div id="gallery" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#gallery" data-slide-to="0" class="active"></li>
-                            <li data-target="#gallery" data-slide-to="1"></li>
-                            <li data-target="#gallery" data-slide-to="2"></li>
-                            <li data-target="#gallery" data-slide-to="3"></li>
-                        </ol>
-
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner" role="listbox">
-                            <div class="item active">
-                                <img src="//placehold.it/400x150">
-                            </div>
-
-                            <div class="item">
-                                <img src="//placehold.it/400x150">
-                            </div>
-
-                            <div class="item">
-                                <img src="//placehold.it/400x150">
-                            </div>
-
-                            <div class="item">
-                                <img src="//placehold.it/400x150">
-                            </div>
-                        </div>
-
-                        <!-- Left and right controls -->
-                        <a class="left carousel-control" href="#gallery" role="button" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#gallery" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
+                    <div class="text-center">
+                        <a href="#Product">
+                            <button class="btn-circle"><i class="fa fa-angle-down fa-4x"></i></button>
                         </a>
                     </div>
-                </div>
+                </section>
 
-                <!--Testimonial-->
-                <div class="col-xs-12">
-                    <div id="testimonial" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#testimonial" data-slide-to="0" class="active"></li>
-                            <li data-target="#testimonial" data-slide-to="1"></li>
-                            <li data-target="#testimonial" data-slide-to="2"></li>
-                            <li data-target="#testimonial" data-slide-to="3"></li>
-                        </ol>
+                <section id="Product" class="col-xs-12">
+                    <h1 class="text-center h1">Our Products</h1>
 
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner" role="listbox">
-                            <div class="item active">
-                                <div class="col-sm-2 hidden-xs"><img class="img-rounded" src="//placehold.it/100x100">
-                                </div>
-                                <div class="col-sm-10">
-                                    <strong>Great Feature!</strong>
-                                    <blockquote>
-                                        <small>Mei te unum apeirian. Ex eos nonumes voluptatibus vituperatoribus, ne duo
-                                            erant
-                                            quaeque, at pro possit copiosae reprehendunt.
-                                        </small>
-                                        <footer>Jimmy Johnson</footer>
-                                    </blockquote>
-                                </div>
-                            </div>
+                    <p>
+                        Concrete curbing is custom designed, continuous, moulded concrete that comes in a wide variety
+                        of different shapes, colours and textures. It is an extremely high quality product that is
+                        durable enough to be installed in any outdoor setting. Our product is designed to follow the
+                        contour of any yard and is perfectly suited for both new construction and mature yards and
+                        serves as an attractive, permanent, no-maintenance alternative to conventional landscape edging
+                        that will never rust or rot in the elements.
+                    </p>
 
-                            <div class="item">
-                                <div class="col-sm-2 hidden-xs"><img class="img-rounded" src="//placehold.it/100x100">
-                                </div>
-                                <div class="col-sm-10">
-                                    <strong>I can't wait to test this out!</strong>
-                                    <blockquote>
-                                        <small>Mei te unum apeirian. Ex eos nonumes voluptatibus vituperatoribus, ne duo
-                                            erant
-                                            quaeque, at pro possit copiosae reprehendunt.
-                                        </small>
-                                        <footer>Dakota Garret</footer>
-                                    </blockquote>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="col-sm-2 hidden-xs"><img class="img-rounded" src="//placehold.it/100x100">
-                                </div>
-                                <div class="col-sm-10">
-                                    <strong>What a great idea for a carousel!</strong>
-                                    <blockquote>
-                                        <small>Mei te unum apeirian. Ex eos nonumes voluptatibus vituperatoribus, ne duo
-                                            erant
-                                            quaeque, at pro possit copiosae reprehendunt.
-                                        </small>
-                                        <footer>Stewart Dusen</footer>
-                                    </blockquote>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="col-sm-2 hidden-xs"><img class="img-rounded" src="//placehold.it/100x100">
-                                </div>
-                                <div class="col-sm-10">
-                                    <strong>Simply the best I've ever seen!</strong>
-                                    <blockquote>
-                                        <small>Mei te unum apeirian. Ex eos nonumes voluptatibus vituperatoribus, ne duo
-                                            erant
-                                            quaeque, at pro possit copiosae reprehendunt.
-                                        </small>
-                                        <footer>Joshua Van</footer>
-                                    </blockquote>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Left and right controls -->
-                        <div class="hidden-xs">
-                            <a class="left-no-bg carousel-control" href="#testimonial" role="button" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="right-no-bg carousel-control" href="#testimonial" role="button" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
+                    <div class="text-center">
+                        <a href="#Process">
+                            <button class="btn-circle"><i class="fa fa-angle-down fa-4x"></i></button>
+                        </a>
                     </div>
-                </div>
+                </section>
 
-                <!--Enhance/Twitter-->
-                <div class="row">
-                    <div class="col-md-4 col-md-offset-2">
-                        <h2 class="text-center">Enhance your yard</h2>
-                        <ul>
-                            <li>Colors</li>
-                            <li>Landscaping</li>
-                            <li>Random</li>
-                            <li>Blah</li>
-                            <li>Other</li>
-                        </ul>
+                <section id="Process" class="col-xs-12">
+                    <h1 class="text-center h1">The Process</h1>
+
+                    <p>
+                        We begin by consulting with you to determine the desired line, shape, form and texture of the
+                        curbing. Before any work is started we use water soluble paint to mark the line to be curbed,
+                        ensuring you receive the design you want.
+                    </p>
+
+                    <p>
+                        Next, if necessary, we will cut a section of sod (roughly 10 inches wide and 1.5 inches deep) to
+                        ensure a flat surface to install the curbing on.
+                    </p>
+
+                    <p>
+                        As this is being done, we will mix the concrete, dying it to whichever colour you would like and
+                        adding fiber meshing which provides added strength to the final product.
+                    </p>
+
+                    <p>
+                        Once the concrete is fully mixed, we are ready to begin curbing. Concrete is fed into the
+                        extruder machine which moulds the mixture into whichever shape you would like. The plywood forms
+                        typically associated with concrete work are not required.
+                    </p>
+
+                    <p>
+                        The curbing is then trowelled to ensure smooth edges and prepare it for whichever texture or
+                        stamp you would like.
+                    </p>
+
+                    <p>
+                        Once the texture and/or stamp have been completed, we install control joints every 3 feet.
+                        Control joints involve essentially cutting half way through the curb. The purpose of this is to
+                        control any cracking of the curb as the ground shifts underneath it. If the curb cracks, it
+                        should crack in the control joint and not be noticeable.
+                    </p>
+
+                    <p>
+                        Once everything is finished, we will spray the curbing with a sealer to keep the concrete
+                        looking its best for an extended period of time.
+                    </p>
+
+                    <p>
+                        n average job is completed over the course of a morning/afternoon.
+                    </p>
+
+                    <div class="text-center">
+                        <a href="#Faq">
+                            <button class="btn-circle"><i class="fa fa-angle-down fa-4x"></i></button>
+                        </a>
                     </div>
-                    <div class="col-md-4">
-                        <h2 class="text-center">Twitter Feed</h2>
-                    </div>
-                </div>
+                </section>
+
+                <section id="Faq" class="col-xs-12">
+                    <h1 class="text-center h1">Frequently Asked Questions</h1>
+                    <dl>
+                        <dt><i class="fa fa-question-circle"></i> Will my lawn be damaged?</dt>
+                        <dd>
+                            No. Our installations have minimal impact on your yard. Our equipment does not damage grass
+                            in any way.
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><i class="fa fa-question-circle"></i> How long does the process take?</dt>
+                        <dd>
+                            The majority of jobs are completed in a morning or afternoon. Large jobs can take a full day
+                            but for the most part, we will have the job completed within a number of hours.
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><i class="fa fa-question-circle"></i> Will the curbing crack?</dt>
+                        <dd>
+                            Concrete curbing and walkways – just like any other concrete product – can and will crack
+                            over time. We experience very little cracking in our products. We try to avoid this as much
+                            as possible by mixing fiber mesh into our concrete to add structural strength to the
+                            concrete itself. Still, in our climate that freezes and thaws yearly, tree roots may lift,
+                            the ground may shift, etc., which can lead to cracking. In an effort to avoid this, we cut
+                            in control joints every 2 to 3 feet. This is designed to give the curb a controlled cracking
+                            point and not be noticeable.
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><i class="fa fa-question-circle"></i> Will the colour fade?</dt>
+                        <dd>
+                            Your curb/walkway will be sealed with a cure and sealing agent. This will help protect it
+                            from the elements and ensure your colour remains intact.
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><i class="fa fa-question-circle"></i> What maintenance will I need to do to the curbing
+                            after it is installed?
+                        </dt>
+                        <dd>
+                            As with any concrete product, it is recommended to re-apply a sealant every year or two to
+                            keep your curb looking its best. There are a wide variety of different finishes, from matte
+                            to a high gloss, are easily applied with either a sprayer or a paint roller, and you can
+                            find them at most hardware stores. We also offer re-sealing as a service – please contact us
+                            for pricing.
+                        </dd>
+                    </dl>
+                </section>
+
             </div>
             <div class="col-sm-1 col-xs-2"></div>
         </div>
     </div>
+    <footer onclick="collapse()" class="text-platinum text-center" id="footer">
+        <p class="small">Produced by: <a href="http://jodakwebsolutions.com/" target="_blank"
+                                         style="color: #E5E4E2; font-weight: bold;">Jodak Web Solutions</a> 2015 <i
+                class="fa fa-copyright"></i></p>
+    </footer>
 </div>
 
-<footer onclick="collapse()" class="text-platinum text-center">
-    <p>Jodak Web Solutions</p>
-</footer>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="//code.jquery.com/jquery-2.1.4.js"></script>
-<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/jquery-ui.js"></script>
 <script src="js/bootstrap.js"></script>
+<script src="js/sidebar.js"></script>
+
 <script>
-    expandBtn = $('#expand');
-    function expand() {
-        if (expandBtn.hasClass('expanded')) {
-//          Out
-            $('.navbar-left').animate({
-                width: '60px'
-            }, {
-                durration: 'slow',
-                specialEasing: {
-                    width: 'easeOutBack'
-                }
-            });
-            $('#body').animate({
-                left: '-=240px'
-            }, {
-                durration: 'slow',
-                specialEasing: {
-                    left: 'easeOutBack'
-                }
-            });
-            $('footer').animate({
-                left: '-=240px'
-            }, {
-                durration: 'slow',
-                specialEasing: {
-                    left: 'easeOutBack'
-                }
-            });
-            expandBtn.removeClass('expanded');
-        } else {
-//          In
-            $('.navbar-left').animate({
-                width: '300px'
-            }, {
-                durration: 'slow',
-                specialEasing: {
-                    width: 'easeOutBack'
-                }
-            });
-            $('#body').animate({
-                left: '+=240px'
-            }, {
-                durration: 'slow',
-                specialEasing: {
-                    left: 'easeOutBack'
-                }
-            });
-            $('footer').animate({
-                left: '+=240px'
-            }, {
-                durration: 'slow',
-                specialEasing: {
-                    left: 'easeOutBack'
-                }
-            });
-            expandBtn.addClass('expanded');
+    var pos = 1;
+    var oldPos = 1;
+    var height = $(window).height();
+
+    $('a').click(function () {
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top - (0.35 * height)
+        }, 'slow');
+        return false;
+    });
+
+    $('#navigation').find('li').hover(
+            function () {
+                $(this).animate({backgroundColor: 'rgba(0,200,100,0.25)', color: '#FFF'}, 'normal');
+            },
+            function () {
+                $(this).animate({backgroundColor: '#fff', color: '##337ab7'}, 'normal');
+            }
+    );
+
+    $('.btn-circle').hover(
+            function () {
+                $(this).animate({backgroundColor: '#E5E4E2', color: '#333'}, 'normal');
+            },
+            function () {
+                $(this).animate({backgroundColor: 'rgba(0,0,0,0)', color: '#E5E4E2'}, 'normal');
+            }
+    );
+    $(window).scroll(function () {
+        var scrollTop = $(document).scrollTop();
+
+        if (scrollTop < height) {
+            pos = 1;
+            if (pos != oldPos) {
+                $('.bg').fadeOut(1500);
+                $('.one').fadeIn(1500);
+                oldPos = pos;
+            }
+        } else if (scrollTop >= height && scrollTop < height * 2) {
+            pos = 2;
+            if (pos != oldPos) {
+                $('.bg').fadeOut(1500);
+                $('.two').fadeIn(1500);
+                oldPos = pos;
+            }
+        } else if (scrollTop >= height * 2 && scrollTop < height * 3) {
+            pos = 3;
+            if (pos != oldPos) {
+                $('.bg').fadeOut(1500);
+                $('.three').fadeIn(1500);
+                oldPos = pos;
+            }
+        } else if (scrollTop >= height * 3 && scrollTop < height * 4) {
+            pos = 4;
+            if (pos != oldPos) {
+                $('.bg').fadeOut(1500);
+                $('.four').fadeIn(1500);
+                oldPos = pos;
+            }
         }
-    }
-    function collapse() {
-        if (expandBtn.hasClass('expanded')) {
-//          Out
-            $('.navbar-left').animate({
-                width: '60px'
-            }, {
-                durration: 'slow',
-                specialEasing: {
-                    width: 'easeOutBack'
-                }
-            });
-            $('#body').animate({
-                left: '-=240px'
-            }, {
-                durration: 'slow',
-                specialEasing: {
-                    left: 'easeOutBack'
-                }
-            });
-            $('footer').animate({
-                left: '-=240px'
-            }, {
-                durration: 'slow',
-                specialEasing: {
-                    left: 'easeOutBack'
-                }
-            });
-        }
-        $('#expand').removeClass('expanded');
-    }
+    });
 </script>
 </body>
 
