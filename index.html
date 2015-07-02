@@ -44,8 +44,8 @@
             <a href="#Home">
                 <li class="list-group-item h3 uppercase">Home</li>
             </a>
-            <a href="#Product">
-                <li class="list-group-item h3 uppercase">Our Product</li>
+            <a href="#Products">
+                <li class="list-group-item h3 uppercase">Our Products</li>
             </a>
             <a href="#Process">
                 <li class="list-group-item h3 uppercase">The Process</li>
@@ -54,11 +54,41 @@
                 <li class="list-group-item h3 uppercase">FAQ</li>
             </a>
         </ul>
+
+        <h3 class="text-center" style="margin-top: 10%">Free Quote</h3>
+
+        <p id="success" class="alert-success" style="display: none;">Your message was successfully sent!</p>
+
+        <form class="row contact" action="contact.php" method="post">
+            <div class="col-xs-12 has-error" id="divName" style="margin-left: auto; margin-right: auto">
+                <input id="name" name="Name" type="text" placeholder="Name (required, at least 2 characters)"
+                       class="form-control square" required onkeyup="validate()">
+            </div>
+            <div class="col-xs-12 has-error" id="divEmail">
+                <input id="email" name="Email" type="email" placeholder="Email Address (required)"
+                       class="form-control square" required onkeyup="validate()">
+            </div>
+            <div class="col-xs-12 has-error" id="divPhone">
+                <input id="phone" name="PhoneNumber" type="text"
+                       placeholder="Phone Number (required, 10 numbers)"
+                       class="form-control square" maxlength="10" required onkeyup="validate()">
+            </div>
+            <div class="col-xs-12 has-error" id="divMessage">
+                <textarea id="message" name="Message"
+                          placeholder="Your message... (required, max of 500 characters)"
+                          class="form-control square" maxlength="500" required onkeyup="validate()"></textarea>
+            </div>
+            <div class="col-xs-12">
+                <button type="submit" class="btn btn-default center-block">
+                    <i class="fa fa-paper-plane"></i> Send Message
+                </button>
+            </div>
+        </form>
     </div>
 </div>
 <div id="body" class="text-platinum page-wrap" onclick="collapse();" style="height: 100%">
-    <div class="container wrap">
-        <div class="row">
+    <div class="container wrap" onclick="collapse();">
+        <div class="row" onclick="collapse();">
             <div class="col-md-12 col-sm-11 col-xs-10">
                 <section id="Home" class="col-xs-12">
                     <h1 class="text-center h1">Luxe</h1>
@@ -72,23 +102,35 @@
                     </p>
 
                     <div class="text-center">
-                        <a href="#Product">
+                        <a href="#Products">
                             <button class="btn-circle"><i class="fa fa-angle-down fa-4x"></i></button>
                         </a>
                     </div>
                 </section>
 
-                <section id="Product" class="col-xs-12">
+                <!-- Products -->
+                <section id="Products" class="col-xs-12">
                     <h1 class="text-center h1">Our Products</h1>
 
-                    <p>
-                        Concrete curbing is custom designed, continuous, moulded concrete that comes in a wide variety
-                        of different shapes, colours and textures. It is an extremely high quality product that is
-                        durable enough to be installed in any outdoor setting. Our product is designed to follow the
-                        contour of any yard and is perfectly suited for both new construction and mature yards and
-                        serves as an attractive, permanent, no-maintenance alternative to conventional landscape edging
-                        that will never rust or rot in the elements.
-                    </p>
+                    <div class="col-md-6">
+                        <h3 class="text-center">Concrete Walkways</h3>
+                        <hr style="margin-top: 0">
+                        <p class="text-justify" style="padding: 0 10px">
+                            Lorem ipsum dolor sit amet, est utinam accusam ea. Cu legimus iudicabit reprimique his, ad
+                            nihil convenire ius, justo mazim intellegam sed no. Pro fierent salutatus hendrerit at,
+                            clita eligendi quo eu, eu mea quas novum nonumes. Ad mel brute.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h3 class="text-center">Curbing</h3>
+                        <hr style="margin-top: 0">
+                        <p class="text-justify" style="padding: 0 10px">
+                            Lorem ipsum dolor sit amet, est utinam accusam ea. Cu legimus iudicabit reprimique his, ad
+                            nihil convenire ius, justo mazim intellegam sed no. Pro fierent salutatus hendrerit at,
+                            clita eligendi quo eu, eu mea quas novum nonumes. Ad mel brute.
+                        </p>
+                    </div>
 
                     <div class="text-center">
                         <a href="#Process">
@@ -97,6 +139,7 @@
                     </div>
                 </section>
 
+                <!-- Process -->
                 <section id="Process" class="col-xs-12">
                     <h1 class="text-center h1">The Process</h1>
 
@@ -150,6 +193,7 @@
                     </div>
                 </section>
 
+                <!-- FAQ -->
                 <section id="Faq" class="col-xs-12">
                     <h1 class="text-center h1">Frequently Asked Questions</h1>
                     <dl>
@@ -210,6 +254,10 @@
     </footer>
 </div>
 
+<div id="quote" style="position: fixed; top: 25px; right: 25px;">
+    <p class="text-center btn btn-default" style="font-size: 2em;" onclick="expand()">Free Quote</p>
+</div>
+
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery-2.1.4.js"></script>
@@ -218,13 +266,19 @@
 <script src="js/sidebar.js"></script>
 
 <script>
+    setInterval(function () {
+        $('#quote').effect('bounce', 'slow');
+    }, 15000)
+</script>
+
+<script>
     var pos = 1;
     var oldPos = 1;
     var height = $(window).height();
 
     $('a').click(function () {
         $('html, body').animate({
-            scrollTop: $($.attr(this, 'href')).offset().top - (0.35 * height)
+            scrollTop: $($.attr(this, 'href')).offset().top - (0.20 * height)
         }, 'slow');
         return false;
     });
@@ -279,6 +333,61 @@
             }
         }
     });
+</script>
+
+<script>
+    var url = window.location.href;
+    if (url.indexOf("true") >= 1) {
+        $('#success').show();
+    } else {
+        $('#success').hide();
+    }
+
+    function validate() {
+        function validEmail(email) {
+            var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            return regex.test(email);
+        }
+
+        var name = $('#name').val();
+        var email = $('#email').val();
+        var phone = $('#phone').val();
+        var message = $('#message').val();
+
+        var divName = $('#divName');
+        var divEmail = $('#divEmail');
+        var divPhone = $('#divPhone');
+        var divMessage = $('#divMessage');
+
+        if (name.length <= 1) {
+            divName.removeClass('has-success');
+            divName.addClass('has-error');
+        } else {
+            divName.removeClass('has-error');
+            divName.addClass('has-success');
+        }
+        if (!validEmail(email)) {
+            divEmail.closest('div').removeClass('has-success');
+            divEmail.closest('div').addClass('has-error');
+        } else {
+            divEmail.closest('div').removeClass('has-error');
+            divEmail.closest('div').addClass('has-success');
+        }
+        if (phone.length < 10 || phone.length > 10) {
+            divPhone.closest('div').removeClass('has-success');
+            divPhone.closest('div').addClass('has-error');
+        } else {
+            divPhone.closest('div').removeClass('has-error');
+            divPhone.closest('div').addClass('has-success');
+        }
+        if (message.length < 10 || message.length > 500) {
+            divMessage.closest('div').removeClass('has-success');
+            divMessage.closest('div').addClass('has-error');
+        } else {
+            divMessage.closest('div').removeClass('has-error');
+            divMessage.closest('div').addClass('has-success');
+        }
+    }
 </script>
 </body>
 

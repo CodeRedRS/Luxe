@@ -7,6 +7,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    text-justify: auto;
 }
 
 body {
@@ -127,6 +128,10 @@ body {
     left: auto;
 }
 
+.square {
+    border-radius: 0 !important;
+}
+
 br.break {
     margin: 50% 0;
 }
@@ -157,17 +162,17 @@ br.break {
 }
 
 section:first-child {
-    margin-top: 35%;
+    margin-top: 15%;
 }
 
 section {
-    margin-top: 100%;
+    margin-top: 50%;
     background-color: rgba(21, 21, 21, 0.8);
     border: solid 1px #111;
 }
 
 section:last-child {
-    margin-bottom: 35%;
+    margin-bottom: 15%;
 }
 
 .wrap {
