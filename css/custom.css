@@ -15,6 +15,10 @@ body {
     overflow-x: hidden;
 }
 
+*:focus {
+    outline-color: transparent !important;
+}
+
 .btn-circle {
     margin: 15px;
     background-color: transparent;
@@ -25,6 +29,14 @@ body {
     height: 5em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.inverse {
+    -webkit-filter: invert(100%);
+    -moz-filter: invert(100%);
+    -ms-filter: invert(100%);
+    -o-filter: invert(100%);
+    filter: invert(100%);
 }
 
 .bg {
@@ -132,6 +144,10 @@ body {
     border-radius: 0 !important;
 }
 
+.round {
+    border-radius: 10px;
+}
+
 br.break {
     margin: 50% 0;
 }
@@ -162,17 +178,27 @@ br.break {
 }
 
 section:first-child {
-    margin-top: 15%;
+    margin-top: 4%;
 }
 
 section {
     margin-top: 50%;
-    background-color: rgba(21, 21, 21, 0.8);
-    border: solid 1px #111;
 }
 
 section:last-child {
     margin-bottom: 15%;
+}
+
+.carousel-inner img {
+    min-height: 350px;
+    width: 100%;
+}
+
+.background {
+    margin-top: 50%;
+    background-color: rgba(21, 21, 21, 0.8);
+    border: solid 1px #111;
+    border-radius: 10px;
 }
 
 .wrap {
