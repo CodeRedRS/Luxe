@@ -23,7 +23,26 @@ body {
     opacity: 0.8;
 }
 
+#quote {
+    position: fixed;
+    top: 75px;
+    margin-right: 10px;
+    right: 20px;
+    z-index: 999;
+}
+
 /* Home Page Carousel */
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 2;
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 0.9;
+}
 
 header.carousel {
     height: 50%;
@@ -33,6 +52,7 @@ header.carousel .item,
 header.carousel .item.active,
 header.carousel .carousel-inner {
     height: 100%;
+    background-color: #000;
 }
 
 header.carousel .fill {
@@ -40,6 +60,14 @@ header.carousel .fill {
     height: 100%;
     background-position: center;
     background-size: cover;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    opacity: 0.75
+}
+
+.fill {
 }
 
 /* 404 Page Styles */
@@ -109,6 +137,15 @@ footer {
 }
 
 /* Index Styles */
+.panel-heading {
+    text-transform: capitalize;
+}
+
+.panel-default {
+    max-height: 275px;
+    overflow: hidden;
+}
+
 #Portfolio .col-md-4 {
     height: 300px;
     overflow: hidden;
@@ -117,4 +154,24 @@ footer {
 #Portfolio img {
     width: 100%;
     height: 100%;
+}
+
+#contact a {
+    color: #69c43a !important;
+}
+
+#contact a:hover {
+    color: #4A8929 !important;
+}
+
+.btn-default {
+    color: #333;
+    background-color: #69c43a;
+    border-color: #4A8929
+}
+
+.btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover, .open > .dropdown-toggle.btn-default {
+    color: #333;
+    background-color: #4A8929;
+    border-color: #4A8929
 }

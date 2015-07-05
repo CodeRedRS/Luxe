@@ -3607,6 +3607,13 @@ select[multiple].form-group-lg .form-control, textarea.form-group-lg .form-contr
     text-decoration: none
 }
 
+.btn-group-xl > .btn, .btn-xl {
+    padding: 15px 22px;
+    font-size: 24px;
+    line-height: 1;
+    border-radius: 9px
+}
+
 .btn-group-lg > .btn, .btn-lg {
     padding: 10px 16px;
     font-size: 18px;
@@ -4844,35 +4851,35 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 }
 
 .navbar-inverse {
-    background-color: #222;
-    border-color: #080808
+    background-color: #69c43a;
+    border-color: #4A8929
 }
 
 .navbar-inverse .navbar-brand {
-    color: #9d9d9d
+    color: #203B11
 }
 
 .navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {
-    color: #fff;
+    color: #F0F9EB;
     background-color: transparent
 }
 
 .navbar-inverse .navbar-text {
-    color: #9d9d9d
+    color: #203B11
 }
 
 .navbar-inverse .navbar-nav > li > a {
-    color: #9d9d9d
+    color: #203B11
 }
 
 .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
-    color: #fff;
+    color: #F0F9EB;
     background-color: transparent
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
-    color: #fff;
-    background-color: #080808
+    color: #F0F9EB;
+    background-color: #203B11
 }
 
 .navbar-inverse .navbar-nav > .disabled > a, .navbar-inverse .navbar-nav > .disabled > a:focus, .navbar-inverse .navbar-nav > .disabled > a:hover {
@@ -4889,7 +4896,7 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 }
 
 .navbar-inverse .navbar-toggle .icon-bar {
-    background-color: #fff
+    background-color: #F0F9EB
 }
 
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
@@ -4897,31 +4904,31 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 }
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
-    color: #fff;
-    background-color: #080808
+    color: #F0F9EB;
+    background-color: #203B11
 }
 
 @media (max-width: 767px) {
     .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
-        border-color: #080808
+        border-color: #203B11
     }
 
     .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
-        background-color: #080808
+        background-color: #203B11
     }
 
     .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-        color: #9d9d9d
+        color: #203B11
     }
 
     .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover {
-        color: #fff;
+        color: #F0F9EB;
         background-color: transparent
     }
 
     .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover {
-        color: #fff;
-        background-color: #080808
+        color: #F0F9EB;
+        background-color: #203B11
     }
 
     .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover {
@@ -4931,19 +4938,19 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 }
 
 .navbar-inverse .navbar-link {
-    color: #9d9d9d
+    color: #203B11
 }
 
 .navbar-inverse .navbar-link:hover {
-    color: #fff
+    color: #F0F9EB
 }
 
 .navbar-inverse .btn-link {
-    color: #9d9d9d
+    color: #203B11
 }
 
 .navbar-inverse .btn-link:focus, .navbar-inverse .btn-link:hover {
-    color: #fff
+    color: #F0F9EB
 }
 
 .navbar-inverse .btn-link[disabled]:focus, .navbar-inverse .btn-link[disabled]:hover, fieldset[disabled] .navbar-inverse .btn-link:focus, fieldset[disabled] .navbar-inverse .btn-link:hover {
@@ -5746,7 +5753,9 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:focus, a.list-g
     margin-top: 0;
     margin-bottom: 0;
     font-size: 16px;
-    color: inherit
+    color: inherit;
+    font-weight: bold;
+
 }
 
 .panel-title > .small, .panel-title > .small > a, .panel-title > a, .panel-title > small, .panel-title > small > a {
