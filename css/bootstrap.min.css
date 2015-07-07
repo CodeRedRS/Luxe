@@ -1411,9 +1411,9 @@ img {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 4px;
-    -webkit-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out
+    -webkit-transition: all 5s ease-in-out;
+    -o-transition: all 5s ease-in-out;
+    transition: all 5s ease-in-out
 }
 
 .img-circle {
@@ -4499,7 +4499,7 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 .navbar-brand {
     float: left;
     height: 50px;
-    padding: 15px 15px;
+    padding: 0 15px;
     font-size: 18px;
     line-height: 20px
 }
@@ -4856,30 +4856,33 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 }
 
 .navbar-inverse .navbar-brand {
-    color: #203B11
+    color: #FFF
 }
 
 .navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {
     color: #F0F9EB;
-    background-color: transparent
+    background-color: transparent;
 }
 
 .navbar-inverse .navbar-text {
-    color: #203B11
+    color: #FFF
 }
 
 .navbar-inverse .navbar-nav > li > a {
-    color: #203B11
+    color: #FFF;
 }
 
 .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
     color: #F0F9EB;
-    background-color: transparent
+    background: -webkit-linear-gradient(transparent, #4A8929); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(transparent, #4A8929); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(transparent, #4A8929); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(transparent, #4A8929);
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
     color: #F0F9EB;
-    background-color: #203B11
+    background-color: #FFF
 }
 
 .navbar-inverse .navbar-nav > .disabled > a, .navbar-inverse .navbar-nav > .disabled > a:focus, .navbar-inverse .navbar-nav > .disabled > a:hover {
@@ -4905,20 +4908,20 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
     color: #F0F9EB;
-    background-color: #203B11
+    background-color: #FFF
 }
 
 @media (max-width: 767px) {
     .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
-        border-color: #203B11
+        border-color: #FFF
     }
 
     .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
-        background-color: #203B11
+        background-color: #FFF
     }
 
     .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-        color: #203B11
+        color: #FFF
     }
 
     .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover {
@@ -4928,7 +4931,7 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 
     .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover {
         color: #F0F9EB;
-        background-color: #203B11
+        background-color: #FFF
     }
 
     .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover {
@@ -4938,7 +4941,7 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 }
 
 .navbar-inverse .navbar-link {
-    color: #203B11
+    color: #FFF
 }
 
 .navbar-inverse .navbar-link:hover {
@@ -4946,7 +4949,7 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 }
 
 .navbar-inverse .btn-link {
-    color: #203B11
+    color: #FFF
 }
 
 .navbar-inverse .btn-link:focus, .navbar-inverse .btn-link:hover {
@@ -5282,9 +5285,9 @@ a.badge:focus, a.badge:hover {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 4px;
-    -webkit-transition: border .2s ease-in-out;
-    -o-transition: border .2s ease-in-out;
-    transition: border .2s ease-in-out
+    -webkit-transition: border 5s ease-in-out;
+    -o-transition: border 5s ease-in-out;
+    transition: border 5s ease-in-out
 }
 
 .thumbnail a > img, .thumbnail > img {
