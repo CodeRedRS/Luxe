@@ -5730,7 +5730,6 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:focus, a.list-g
 
 .panel {
     overflow: hidden;
-    /*max-height: 334px;*/
     margin-bottom: 20px;
     background-color: #fff;
     border: 1px solid transparent;

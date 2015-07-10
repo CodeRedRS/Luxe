@@ -6,10 +6,10 @@ setInterval(function () {
 }, 5000);
 
 $('.rand-img').each(function () {
-    var rand = Math.floor((Math.random() * 57) + 1);
+    var rand = Math.floor((Math.random() * 55) + 1);
 
-    if (rand > 59) {
-        rand = Math.floor((Math.random() * 57) + 1)
+    if (rand > 55) {
+        rand = Math.floor((Math.random() * 55) + 1)
     }
 
     $(this).attr('src', 'imgs/misc/misc%20(' + rand + ').jpg');
