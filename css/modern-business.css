@@ -141,8 +141,8 @@ footer {
     text-transform: capitalize;
 }
 
-.panel-default {
-    max-height: 275px;
+#a .panel {
+    min-height: 347px;
     overflow: hidden;
 }
 
@@ -156,23 +156,23 @@ footer {
     height: 100%;
 }
 
-#contact a {
+a {
     color: #69c43a !important;
 }
 
-#contact a:hover {
+a:hover {
     color: #4A8929 !important;
 }
 
 .btn-default {
     margin: 5px;
-    color: #fff;
+    color: #fff !important;
     background-color: #69c43a;
     border-color: #4A8929
 }
 
 .btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover, .open > .dropdown-toggle.btn-default {
-    color: #eee;
+    color: #eee !important;
     background-color: #4A8929;
     border-color: #4A8929
 }
